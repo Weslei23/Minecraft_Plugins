@@ -12,3 +12,6 @@ commands:
   gm:
     description: "Altere o modo de jogo para survival ou criativo."
     usage: /gm ( 0 - 1 )
+  bau:
+    description: Abre um bau virtual
+    usage: /bau

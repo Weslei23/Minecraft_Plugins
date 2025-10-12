@@ -1,5 +1,6 @@
 package com.wsdev.wSUtils;
 
+import com.wsdev.wSUtils.Commands.ChestCommand;
 import com.wsdev.wSUtils.Commands.FlyCommand;
 import com.wsdev.wSUtils.Commands.GmCommand;
 import com.wsdev.wSUtils.Commands.SiteCommand;
@@ -20,9 +21,7 @@ public final class WSUtils extends JavaPlugin
         config = getConfig();
 
         //Chama os comandos.
-        getCommand( "fly" ).setExecutor( new FlyCommand() );
-        getCommand( "gm" ).setExecutor( new GmCommand() );
-        getCommand( "site" ).setExecutor( new SiteCommand() );
+        registerCommands();
 
     }
 
@@ -36,5 +35,13 @@ public final class WSUtils extends JavaPlugin
     public static FileConfiguration getPluginConfig()
     {
         return config;
+    }
+
+    public void registerCommands()
+    {
+        if( getCommand( "fly" ) != null ) getCommand( "fly" ).setExecutor( new FlyCommand() );
+        if( getCommand( "gm" ) != null ) getCommand( "gm" ).setExecutor( new GmCommand() );
+        if( getCommand( "site" ) != null ) getCommand( "site" ).setExecutor( new SiteCommand() );
+        if( getCommand( "bau" ) != null ) getCommand( "bau" ).setExecutor( new ChestCommand() );
     }
 }
