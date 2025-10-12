@@ -1,0 +1,11 @@
+name: WSUtils
+version: 1.0-SNAPSHOT
+main: com.wsdev.simpleCommands.SimpleCommands
+api-version: 1.21.9
+
+Site:
+  Exigir-Permissao: false
+  Mensagem: "&e&l[Info]: &7Site do nosso servidor: &awww.wsdev.com.br"
+
+Fly:
+  Exigir-Permissao: false

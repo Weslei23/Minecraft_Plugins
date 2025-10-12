@@ -1,0 +1,14 @@
+name: WSUtils
+version: '1.0-SNAPSHOT'
+main: com.wsdev.wSUtils.WSUtils
+api-version: '1.21'
+
+commands:
+  site:
+    description: "Envia o site do servidor no chat."
+  fly:
+    description: "Permite ativar o fly."
+    usage: /fly
+  gm:
+    description: "Altere o modo de jogo para survival ou criativo."
+    usage: /gm ( 0 - 1 )

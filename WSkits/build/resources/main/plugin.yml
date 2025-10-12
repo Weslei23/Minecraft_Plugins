@@ -1,0 +1,9 @@
+name: WSkits
+version: '1.0-SNAPSHOT'
+main: com.wsdev.wSkits.WSkits
+api-version: '1.21'
+commands:
+  kit:
+    description: Gerencia kits
+    usage: /kit <create|get|list> [name]
+    permission: kit.use
