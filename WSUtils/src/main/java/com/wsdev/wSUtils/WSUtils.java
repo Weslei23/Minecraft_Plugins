@@ -1,9 +1,6 @@
 package com.wsdev.wSUtils;
 
-import com.wsdev.wSUtils.Commands.ChestCommand;
-import com.wsdev.wSUtils.Commands.FlyCommand;
-import com.wsdev.wSUtils.Commands.GmCommand;
-import com.wsdev.wSUtils.Commands.SiteCommand;
+import com.wsdev.wSUtils.Commands.*;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -43,5 +40,6 @@ public final class WSUtils extends JavaPlugin
         if( getCommand( "gm" ) != null ) getCommand( "gm" ).setExecutor( new GmCommand() );
         if( getCommand( "site" ) != null ) getCommand( "site" ).setExecutor( new SiteCommand() );
         if( getCommand( "bau" ) != null ) getCommand( "bau" ).setExecutor( new ChestCommand() );
+        if( getCommand( "tpa" ) != null ) getCommand( "tpa" ).setExecutor( new TpCommand() );
     }
 }

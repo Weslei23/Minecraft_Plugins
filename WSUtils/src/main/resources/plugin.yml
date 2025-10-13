@@ -15,3 +15,5 @@ commands:
   bau:
     description: Abre um bau virtual
     usage: /bau
+  tpa:
+    description: Abre um bau virtual
