@@ -16,4 +16,5 @@ commands:
     description: Abre um bau virtual
     usage: /bau
   tpa:
-    description: Abre um bau virtual
+    description: "Teleporta para um usuário."
+    usage: /tpa ( player )

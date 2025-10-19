@@ -1,6 +1,6 @@
 name: WSUtils
 version: 1.0-SNAPSHOT
-main: com.wsdev.simpleCommands.SimpleCommands
+main: com.wsdev.wSUtils.WSUtils
 api-version: 1.21.9
 
 Site:
